@@ -42,34 +42,50 @@
 
 	#footer {
 		background-attachment: scroll;
-		background-color: #1f1815;
-		background-image: url("images/overlay.png"), url("../images/bg.jpg");
 		background-position: top left,						bottom center;
 		background-repeat: repeat,							no-repeat;
 		background-size: auto,							cover;
 		bottom: auto;
 		left: auto;
-		padding: 4em 4em 6em 4em;
+		padding: 0em 0em 3em 0em;
 		position: relative;
 		text-align: center;
 		width: 100%;
 	}
 
 		#footer .icons {
-			margin: 0 0 1em 0;
+			margin: 1em 0 0 0;
 		}
 
+			#footer .icons a {
+				color: rgba(57, 182, 139, 1.0);
+			}
+
 		#footer .copyright {
-			margin: 0 0 1em 0;
+			color: rgba(57, 182, 139, 1.0);
+			font-size: 0.8em;
+			list-style: none;
+			margin: 1em 0 0 0;
+			padding: 0;
 		}
 
 			#footer .copyright li {
-				border-left-width: 1px;
+				border-left: solid 1px rgba(57, 182, 139, 0.5);
 				display: inline-block;
 				line-height: 1em;
 				margin-left: 0.75em;
 				padding-left: 0.75em;
 			}
+
+				#footer .copyright li:first-child {
+					border-left: 0;
+					margin-left: 0;
+					padding-left: 0;
+				}
+
+				#footer .copyright li a {
+					color: inherit;
+				}
 
 /* Main */
 
